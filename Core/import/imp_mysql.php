@@ -23,7 +23,7 @@ if($_POST['pilih_db'] == null || $_POST['file'] == null){
 		$pjgkl[$i] = oci_field_size($sql, $i);
 	}
 	$con_mysql = new mysqli("localhost","root","","test");
-	$sql_tbl = "CREATE TABLE IF NOT EXISTS $db";
+	$sql_tbl = "CREATE TABLE IF NOT EXISTS $db (";
   	for ($i = 1 ; $i < $jmkl; $i++) {
     	$sql_tbl .= "$nmkl[$i] $tpkl[$i]";
     	$sql_tbl.= "($pjgkl[$i])";
