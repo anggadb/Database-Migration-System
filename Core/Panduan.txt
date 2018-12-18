@@ -1,0 +1,24 @@
+How to use simbada :
+1. Pastikan XAMPP dan Oracle (yang telah terisi database yang akan di migrasi) sudah terinstall di komputer yang akan dijadikan sebagai Web Server.
+
+2. Buka XAMPP lalu start Apache dan MySQL
+
+3. Buka browser lalu masukkan URL "localhost/phpmyadmin"
+
+4. Buat satu database dan buat tabel di database tersebut dengan nama tabel "admin" dengan kolom nama, nip dan password. Berikut syntax MySQL Commandnya :
+CREATE TABLE admin (
+nama VARCHAR(250),
+nip VARCHAR(250) PRIMARY KEY,
+password VARCHAR(250))
+
+5. Isi tabel tersebut dengan identitas admin yang akan mendapatkan akses pada sistem ini. Berikut syntax MySQL Commandnya :
+INSERT INTO admin VALUES ('//nama','//nip','//password')
+
+6. Langkah berikutnya adalah masuk ke simbada dengan cara masukkan URL berikut di browser : "localhost/(nama folder simbada yang berada di 'C:\xampp\htdocs')/core)"
+
+7. Masukkan nip dan password yang telah didaftarkan tadi
+
+8. Langkah berikutnya, masukkan schema, password, host (defaultnya: //localhost/XE) Oracle dan isi inforamsi tentang database MySQLnya dengan host(default: localhost)
+database, password.
+
+9. Silahkan lihat FAQ pada bantuan di sistem untuk seputar pertanyaan teknis. 

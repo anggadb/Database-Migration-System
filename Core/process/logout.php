@@ -1,0 +1,13 @@
+<?php
+session_start();
+unset($_SESSION['nip']);
+unset($_SESSION['ora_schema']);
+unset($_SESSION['ora_pwd']);
+unset($_SESSION['ora_host']);
+unset($_SESSION['m_host']);
+unset($_SESSION['m_user']);
+unset($_SESSION['m_pwd']);
+unset($_SESSION['m_db']);
+session_destroy();
+header("Location:../index.php");
+?>
